@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'iDroid';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;  
+}
+body {
+    background-color: #8F6200; 
+    font-family: 'iDroid', sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #BF2800, #8F0500);
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+header > h1 {
+    font-family: iDroid, sans-serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.4);
+}
+
+header > p {
+    font-size: 1.1em;
+    color: white;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    background-color: #8F0500;
+    padding: 10px 30px;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: .3s;
+}
+
+nav > a:hover {
+    background-color: #BF4A00;
+    color: white;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+aside strong {
+    color: white;
+    font-weight: bold;
+    background-color: #8F0500;
+    padding: 2px 6px;
+
+}
+
+article > h1 {
+    font-family: 'iDroid';
+    font-size: 1.8em;
+    color: #8F0500;
+    margin-bottom: 15px;
+}
+
+article > h2 {
+    font-family: 'iDroid';
+    font-size: 1.3em;
+    color: #BF2800;
+    background-image: linear-gradient(to right, #BF6B00, transparent);
+    text-indent: 8px;
+    padding: 2px 0px;
+    margin-top: 20px;
+}
+
+article p {
+    margin: 15px 0px;
+    text-align: justify;
+    line-height: 1.5em;
+    text-indent: 30px;
+    color: #222222
+}
+
+article a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: #BF4A00;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+article a:hover {
+    text-decoration: underline;
+    background-color: #8F0500;
+}
+
+article img {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+
+div video {
+    background-color: #8F0500;
+    margin: 20px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 56.5%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: #BF6B00;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    margin: 35px 0px;
+}
+
+aside h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -20px -20px 20px -20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+aside > p {
+    color: white;
+    text-indent: 0px;
+}
+
+aside > ul {
+    list-style-type: none;
+    padding: 10px 0px;
+}
+
+@media (min-width: 650px) {
+    aside > ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    } 
+}
+
+aside > ul > li {
+    color: white;
+    padding: 4px 0px;
+}
+
+aside > ul > li::before {
+    content: '\2714\00A0\00A0';
+}
+
+aside a {
+    background-color: #8F0500;
+    color: white;
+}
+
+aside a:hover {
+    background-color: white;
+    color: #8F0500;
+}
+
+footer {
+    background-color: #8F0500;
+    color: white;
+    text-align: center;
+    font-size: 0.85em;
+    padding: 12px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #BF6B00;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: white;
+}
