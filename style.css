@@ -149,6 +149,7 @@ div video {
 }
 
 div.video > iframe {
+    margin: auto;
     position: absolute;
     top: 5%;
     left: 5%;
